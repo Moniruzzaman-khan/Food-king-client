@@ -9,7 +9,7 @@ const SignUp = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/api/v1/registration", user)
+        axios.post("https://food-king-server.vercel.app/api/v1/registration", user)
             .then(result => {
                 console.log(result);
                 navigate("/login")
