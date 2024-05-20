@@ -21,7 +21,7 @@ const Cart = () => {
             return;
         }
         try {
-            let response = await axios.post("http://localhost:5000/api/v1/orderData", {
+            let response = await axios.post("https://food-king-server.vercel.app/api/v1/orderData", {
                 order_data: data,
                 email: userEmail,
                 order_date: new Date().toDateString()
