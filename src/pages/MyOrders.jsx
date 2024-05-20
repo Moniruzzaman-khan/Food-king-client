@@ -11,7 +11,7 @@ const MyOrders = () => {
     const fetchMyOrder = async () => {
         try {
             console.log(localStorage.getItem('userEmail'));
-            const response = await axios.post('http://localhost:5000/api/v1/myOrderData', {
+            const response = await axios.post('https://food-king-server.vercel.app/api/v1/myOrderData', {
                 email: localStorage.getItem('userEmail'),
             });
             setOrderData(response.data);
